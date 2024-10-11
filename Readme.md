@@ -1,5 +1,3 @@
-Here’s a sample README.md file for running an Expo project:
-
 # expoclass
 
 This is a React Native application built with [Expo](https://expo.dev/) using SDK version 50. This project is designed to help you quickly get started with a mobile app that runs on Android, iOS, and the web.
@@ -83,3 +81,4 @@ For more information on Expo and how to use it, check out the following resource
 - **Running the Application**: Instructions for running on different platforms.
 - **Building**: Instructions to build the app for Android and iOS.
 - **Troubleshooting**: Tips to handle common issues.
+```
