@@ -3,15 +3,7 @@ import * as Font from "expo-font";
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-  },
-  title: {
-    fontSize: 60,
-    fontWeight: "bold",
-    color: "#fff",
-    alignSelf: "center",
-    fontFamily: "Hiatus",
-    alignItems: "center",
-    
+    flexDirection: "column",
   },
   background: {
     flex: 1,
@@ -19,10 +11,20 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
-  innerPadding:{
+  innerPadding: {
     paddingHorizontal: 30,
-    
+    flex:1,
   },
+  title: {
+    fontSize: 60,
+    fontWeight: "bold",
+    color: "#fff",
+    alignSelf: "center",
+    fontFamily: "Hiatus",
+    justifyContent: "flex-start",
+  },
+  
+
   subtext1: {
     width: "100%",
     color: "#fff",
