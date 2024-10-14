@@ -24,7 +24,7 @@ const Splash = () => {
           <Text style={styles.subtext1}>Plan your </Text>
           <Text style={styles.subtext2}>Luxurious </Text>
           <Text style={styles.subtext2}>Vacation</Text>
-          <Button />
+          <Button btnText="Explore"/>
         </View>
       </ImageBackground>
     </View>
