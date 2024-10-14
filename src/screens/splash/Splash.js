@@ -7,8 +7,7 @@ import Button from "../../components/Button";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Splash = ({ navigation }) => {
-  console.log(navigation);
-  console.log(navigation);
+  
   let [fontsLoaded] = useFonts({
     Hiatus: require("../../assets/fonts/Hiatus.ttf"),
   });
@@ -36,7 +35,7 @@ const Splash = ({ navigation }) => {
               <Text style={styles.subtext2}>Luxurious </Text>
               <Text style={styles.subtext2}>Vacation</Text>
               <View style={styles.btnContainer}>
-                <Button btnText="Explore" />
+                <Button btnText="Explore" onPressFunction={goToHomeScreen} />
               </View>
             </View>
           </View>
