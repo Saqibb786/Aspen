@@ -14,12 +14,14 @@ export default Button;
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "blue",
-    padding: 10,
+    backgroundColor: "rgba(23, 111, 242, 1)",
+    padding: 14,
     width:"100%",
     borderRadius: 5,
     justifyContent: "center",
     alignItems: "center",
+    borderRadius:10,
+    color: "white"
   },
   text: {
     color: "white",
