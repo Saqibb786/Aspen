@@ -6,13 +6,15 @@ import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import Button from "../../components/Button";
 
-const Splash = ({navigation}) => {
+const Splash = ({ navigation }) => {
+    console.log(navigation);
+  console.log(navigation);
   let [fontsLoaded] = useFonts({
     Hiatus: require("../../assets/fonts/Hiatus.ttf"),
   });
   const goToHomeScreen = () => {
     navigation.navigate("Home");
-  }
+  };
   if (!fontsLoaded) {
     return <AppLoading />;
   }
@@ -27,7 +29,7 @@ const Splash = ({navigation}) => {
           <Text style={styles.subtext1}>Plan your </Text>
           <Text style={styles.subtext2}>Luxurious </Text>
           <Text style={styles.subtext2}>Vacation</Text>
-          <Button btnText="Explore" onPressFunction={goToHomeScreen}/>
+          <Button btnText="Explore" onPressFunction={goToHomeScreen} />
         </View>
       </ImageBackground>
     </View>
