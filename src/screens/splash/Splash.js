@@ -4,6 +4,7 @@ import styles from "./styles";
 import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
+import Button from "../../components/Button";
 
 const Splash = () => {
   let [fontsLoaded] = useFonts({
@@ -18,7 +19,13 @@ const Splash = () => {
         source={require("../../assets/Splash_background.png")}
         style={styles.background}
       >
-        <Text style={styles.text}>Aspen</Text>
+        <View style={styles.innerPadding}>
+          <Text style={styles.title}>Aspen</Text>
+          <Text style={styles.subtext1}>Plan your </Text>
+          <Text style={styles.subtext2}>Luxurious </Text>
+          <Text style={styles.subtext2}>Vacation</Text>
+          <Button />
+        </View>
       </ImageBackground>
     </View>
   );
