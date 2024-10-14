@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   subtext2: {
     color: "white",
     letterSpacing: 1.4,
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: "700",
     marginVertical: 4,
   },
