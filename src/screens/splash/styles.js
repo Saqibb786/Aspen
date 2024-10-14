@@ -14,8 +14,12 @@ const styles = StyleSheet.create({
   innerPadding: {
     paddingHorizontal: 30,
     flex:1,
+    justifyContent: "start",
+    alignItems: "center",
   },
+  
   title: {
+    paddingTop:50,
     fontSize: 60,
     fontWeight: "bold",
     color: "#fff",
