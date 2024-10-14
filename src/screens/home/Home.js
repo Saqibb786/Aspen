@@ -1,16 +1,23 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
   return (
-    <View style={{flex:1}}>
-      <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
+    <View style={styles.flex}>
+      <SafeAreaView style={styles.flex}>
         <Text>Home</Text>
-      </View>
+      </SafeAreaView>
     </View>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  flex: {
+    flex: 1,
+  },
+  bgTest: {
+    backgroundColor: "red",
+  },
+});
