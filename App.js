@@ -1,11 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Home from "./src/screens/Home";
+import RootStackNavigation from "./src/navigation/RootStackNavigation";
 
 const App = () => {
-  return (
-    <Home/>
-  );
+  return <RootStackNavigation />;
 };
 
 export default App;
