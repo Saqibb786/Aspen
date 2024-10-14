@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View ,TouchableOpacity} from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-
 
 const Button = (props) => {
   return (
@@ -15,9 +14,9 @@ export default Button;
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "blue",
-    padding: 10,
-    width:"100%",
-    borderRadius: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 15,
+    borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
   },

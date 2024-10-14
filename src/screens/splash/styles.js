@@ -1,49 +1,50 @@
 import { StyleSheet } from "react-native";
-import * as Font from "expo-font";
+
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    flexDirection: "column",
+    height: "100%",
+  },
+  flex: {
+    flex: 1,
   },
   background: {
-    flex: 1,
-    justifyContent: "center",
     width: "100%",
     height: "100%",
   },
-  innerPadding: {
-    paddingHorizontal: 30,
-    flex:1,
-    justifyContent: "start",
+  textContainer: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
     alignItems: "center",
-  },
-  
-  title: {
-    paddingTop:50,
-    fontSize: 60,
-    fontWeight: "bold",
-    color: "#fff",
-    alignSelf: "center",
-    fontFamily: "Hiatus",
-    justifyContent: "flex-start",
-  },
-  
 
-  subtext1: {
+    paddingVertical: 40,
+    paddingHorizontal: 30,
+  },
+  subtextContainer: {
+    flex: 1,
+    justifyContent: "flex-end",
     width: "100%",
-    color: "#fff",
-    fontSize: 25,
-    marginTop: 10,
-    textAlign: "left",
-    textAlignmentsVertical: "bottom",
+  },
+  btnContainer: {
+    marginVertical: 20,
+  },
+  title: {
+    color: "white",
+    fontSize: 116,
+  },
+  subtext1: {
+    color: "white",
+    fontSize: 24,
+    letterSpacing: 1.4,
+    marginVertical: 4,
   },
   subtext2: {
-    width: "100%",
-    color: "#fff",
-    fontSize: 30,
-    marginTop: 10,
-    textAlign: "left",
-    textAlignmentsVertical: "bottom",
+    color: "white",
+    letterSpacing: 1.4,
+    fontSize: 24,
+    fontWeight: "700",
+    marginVertical: 4,
   },
 });
 
