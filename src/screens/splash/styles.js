@@ -1,13 +1,14 @@
 import { StyleSheet } from "react-native";
+import * as Font from "expo-font";
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    
   },
   text: {
-    fontSize: 24,
+    fontSize: 60,
     fontWeight: "bold",
-    color: "#000",
+    color: "#fff",
+    fontFamily: "Hiatus",
   },
   background: {
     flex: 1,
