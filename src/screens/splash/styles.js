@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "white",
-    fontSize: 116,
+    fontSize: 100,
   },
   subtext1: {
     color: "white",
-    fontSize: 24,
+    fontSize: 20,
     letterSpacing: 1.4,
     marginVertical: 4,
   },
