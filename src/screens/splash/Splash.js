@@ -6,11 +6,16 @@ import { useFonts } from "expo-font";
 import Button from "../../components/Button";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Splash = () => {
+const Splash = ({ navigation }) => {
+  console.log(navigation);
+  console.log(navigation);
   let [fontsLoaded] = useFonts({
     Hiatus: require("../../assets/fonts/Hiatus.ttf"),
   });
 
+  const goToHomeScreen = () => {
+    navigation.navigate("Home");
+  };
   if (!fontsLoaded) {
     return <AppLoading />;
   }

@@ -3,8 +3,8 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.text}>{props.btnText}</Text>
+    <TouchableOpacity style={styles.button} onPress={onPressFunction}>
+      <Text style={styles.text}>{btnText}</Text>
     </TouchableOpacity>
   );
 };
@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 10,
+    color: "white",
   },
   text: {
     color: "white",
