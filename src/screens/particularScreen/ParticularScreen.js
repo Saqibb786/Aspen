@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome, MaterialIcons, Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const ParticularScreen = () => {
@@ -82,9 +82,13 @@ const ParticularScreen = () => {
               </View>
             </View>
             <View style={styles.footer}>
-              <Text style={styles.price}>$199</Text>
+              <View>
+                <Text>Price</Text>
+                <Text style={styles.price}>$199</Text>
+              </View>
               <TouchableOpacity style={styles.bookButton}>
                 <Text style={styles.bookButtonText}>Book Now</Text>
+                <MaterialIcons name="arrow-forward" size={24} color="white" />
               </TouchableOpacity>
             </View>
           </View>
@@ -103,7 +107,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 14,
-    paddingBottom: 14,
+    paddingBottom: 18,
   },
   card: {
     backgroundColor: "#fff",
@@ -212,23 +216,22 @@ const styles = StyleSheet.create({
   facility: {
     alignItems: "center",
     backgroundColor: "rgba(23,111,242,0.05)",
-    borderColor:"transparent",
-    borderWidth:2,
+    borderColor: "transparent",
+    borderWidth: 2,
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 15,
     shadowColor: "#000",
     shadowOpacity: 0.1,
-    width:"24%",
-    flexDirection:'column',
-    justifyContent:"space-between",
-    alignItems:"center"
+    width: "24%",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   facilityText: {
     marginTop: 4,
     fontSize: 12,
     color: "gray",
-    
   },
   footer: {
     flexDirection: "row",
@@ -242,10 +245,16 @@ const styles = StyleSheet.create({
     color: "#10b981",
   },
   bookButton: {
-    backgroundColor: "#3b82f6",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 12,
+    backgroundColor: "rgba(23,111,242,1)",
     paddingVertical: 8,
     paddingHorizontal: 24,
-    borderRadius: 8,
+    borderRadius: 16,
+    width: "70%",
+    height: "100%",
     shadowColor: "#000",
     shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 2 },
@@ -253,8 +262,11 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   bookButtonText: {
+    alignSelf: "center",
+    borderWidth: 0,
     color: "#fff",
-    fontSize: 16,
+    fontSize: 19,
     fontWeight: "600",
+    paddingRight: 10,
   },
 });
