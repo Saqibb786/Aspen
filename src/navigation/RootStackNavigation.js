@@ -4,13 +4,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // Screens
 import Home from "../screens/home/Home";
 import Splash from "../screens/splash/Splash";
+import ParticularScreen from "../screens/particularScreen/ParticularScreen";
 
 const Stack = createNativeStackNavigator();
 
 function RootStackNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Splash">
+      <Stack.Navigator initialRouteName="ParticularScreen">
         <Stack.Screen
           name="Splash"
           component={Splash}
@@ -21,6 +22,13 @@ function RootStackNavigation() {
         <Stack.Screen
           name="Home"
           component={Home}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ParticularScreen"
+          component={ParticularScreen}
           options={{
             headerShown: false,
           }}
