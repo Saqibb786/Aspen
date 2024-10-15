@@ -69,7 +69,7 @@ const ParticularScreen = () => {
                 <Text style={styles.facilityText}>1 Heater</Text>
               </View>
               <View style={styles.facility}>
-                <FontAwesome name="utensils" size={24} color="gray" />
+                <FontAwesome name="cutlery" size={24} color="gray" />
                 <Text style={styles.facilityText}>Dinner</Text>
               </View>
               <View style={styles.facility}>
@@ -77,7 +77,7 @@ const ParticularScreen = () => {
                 <Text style={styles.facilityText}>1 Tub</Text>
               </View>
               <View style={styles.facility}>
-                <FontAwesome name="swimming-pool" size={24} color="gray" />
+                <FontAwesome name="tint" size={24} color="gray" />
                 <Text style={styles.facilityText}>Pool</Text>
               </View>
             </View>
@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 14,
+    paddingBottom: 14,
   },
   card: {
     backgroundColor: "#fff",
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     elevation: 5,
     width: "100%",
     height: "100%",
-    maxWidth: 400,
+    maxWidth: "100%",
   },
   imageContainer: {
     position: "relative",
@@ -198,9 +199,10 @@ const styles = StyleSheet.create({
   },
 
   facilitiesTitle: {
-    fontSize: 18,
-    fontWeight: "600",
+    fontSize: 22,
+    fontWeight: "800",
     marginTop: 30,
+    marginBottom: 10,
   },
   facilitiesContainer: {
     flexDirection: "row",
@@ -209,11 +211,24 @@ const styles = StyleSheet.create({
   },
   facility: {
     alignItems: "center",
+    backgroundColor: "rgba(23,111,242,0.05)",
+    borderColor:"transparent",
+    borderWidth:2,
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 15,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    width:"24%",
+    flexDirection:'column',
+    justifyContent:"space-between",
+    alignItems:"center"
   },
   facilityText: {
     marginTop: 4,
     fontSize: 12,
     color: "gray",
+    
   },
   footer: {
     flexDirection: "row",
