@@ -36,7 +36,11 @@ const ParticularScreen = () => {
             </View>
 
             <View style={styles.ratingContainer}>
-              <FontAwesome name="star" size={16} color='rgba(223, 150, 82, 1)' />
+              <FontAwesome
+                name="star"
+                size={16}
+                color="rgba(223, 150, 82, 1)"
+              />
               <Text style={styles.ratingText}>4.5 (355 Reviews)</Text>
             </View>
 
@@ -45,7 +49,18 @@ const ParticularScreen = () => {
               America. The choose-your-own-adventure possibilities—skiing,
               hiking, dining shopping and ....
             </Text>
-            <Text style={styles.link}>Read more</Text>
+            <View style={styles.flex}>
+              <TouchableOpacity>
+                <Text style={styles.link}>Read more</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.angleDown}>
+                <FontAwesome
+                  name="angle-down"
+                  size={24}
+                  color="rgba(23,111,242,1)"
+                />
+              </TouchableOpacity>
+            </View>
 
             <Text style={styles.facilitiesTitle}>Facilities</Text>
             <View style={styles.facilitiesContainer}>
@@ -146,6 +161,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 8,
   },
+  flex: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
   title: {
     fontSize: 24,
     fontWeight: "600",
@@ -156,7 +175,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 12,
   },
-
+  angleDown: {
+    alignSelf: "center",
+    marginTop: 12,
+    marginLeft: 8,
+  },
   ratingText: {
     marginLeft: 4,
     fontSize: 14,
@@ -168,14 +191,16 @@ const styles = StyleSheet.create({
     color: "gray",
   },
   link: {
-    color: "#1e40af",
+    color: "rgba(23,111,242,1)",
+    fontWeight: "700",
+    fontSize: 16,
     marginTop: 8,
   },
 
   facilitiesTitle: {
     fontSize: 18,
     fontWeight: "600",
-    marginTop: 16,
+    marginTop: 30,
   },
   facilitiesContainer: {
     flexDirection: "row",
