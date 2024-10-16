@@ -37,7 +37,7 @@ const Splash = ({ navigation }) => {
               <View style={styles.btnContainer}>
                 <Button btnText="Explore" onPressFunction={goToHomeScreen} />
               </View>
-            </View>
+            </View> 
           </View>
         </ImageBackground>
       </SafeAreaView>

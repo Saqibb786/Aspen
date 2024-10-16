@@ -2,16 +2,16 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // Screens
-import Home from "../screens/home/Home";
 import Splash from "../screens/splash/Splash";
 import ParticularScreen from "../screens/particularScreen/ParticularScreen";
+import bottomTabNavigator from "./bottomTabNavigation";
 
 const Stack = createNativeStackNavigator();
 
 function RootStackNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="ParticularScreen">
+      <Stack.Navigator initialRouteName="bottomTabNavigator">
         <Stack.Screen
           name="Splash"
           component={Splash}
@@ -20,8 +20,8 @@ function RootStackNavigation() {
           }}
         />
         <Stack.Screen
-          name="Home"
-          component={Home}
+          name="bottomTabNavigator"
+          component={bottomTabNavigator}
           options={{
             headerShown: false,
           }}
