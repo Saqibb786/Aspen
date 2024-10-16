@@ -37,12 +37,7 @@ const HomeScreen = () => (
 
 
 export default HomeScreen;
-// Dummy Screen
-const DummyScreen = () => (
-  <View style={styles.container}>
-    <Text>Coming Soon</Text>
-  </View>
-);
+
 
 const styles = StyleSheet.create({
   container: {

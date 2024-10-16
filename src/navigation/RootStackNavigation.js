@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // Screens
 import Splash from "../screens/splash/Splash";
 import ParticularScreen from "../screens/particularScreen/ParticularScreen";
-import bottomTabNavigator from "./bottomTabNavigation";
+import bottomTabNavigator from "../navigation/BottomTabNavigation";
 
 const Stack = createNativeStackNavigator();
 
