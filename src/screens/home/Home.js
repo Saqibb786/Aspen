@@ -20,9 +20,24 @@ const HomeScreen = () => (
       <View style={styles.container}>
         <Text style={styles.headerText}>Explore</Text>
         <View style={styles.flexDirection}>
-          <FontAwesome style={{alignSelf:"center",marginBottom:18,marginRight:10}} name="map-marker" size={24} color="blue" />
+          <FontAwesome
+            style={{ alignSelf: "center", marginBottom: 18, marginRight: 10 }}
+            name="map-marker"
+            size={24}
+            color="blue"
+          />
           <Text style={styles.locationText}>Aspen, USA</Text>
-          <FontAwesome style={{alignSelf:"center",marginBottom:18,marginRight:10,marginLeft:10}} name="angle-down" size={24} color="blue" />
+          <FontAwesome
+            style={{
+              alignSelf: "center",
+              marginBottom: 18,
+              marginRight: 10,
+              marginLeft: 10,
+            }}
+            name="angle-down"
+            size={24}
+            color="blue"
+          />
         </View>
       </View>
 
@@ -71,7 +86,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 24,
-    fontWeight: "bold",
+    fontWeight: "light",
     marginBottom: 8,
   },
   locationText: {

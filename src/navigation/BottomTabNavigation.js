@@ -3,8 +3,9 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../screens/home/Home";
-import DummyScreen from "../screens/home/dummyScreen/DummyScreen";
+
 import { FontAwesome } from "@expo/vector-icons";
+import DummyScreen from "../screens/dummyScreen/DummyScreen";
 
 const Tab = createBottomTabNavigator();
 
