@@ -7,13 +7,12 @@ import Button from "../../components/Button";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Splash = ({ navigation }) => {
-  
   let [fontsLoaded] = useFonts({
     Hiatus: require("../../assets/fonts/Hiatus.ttf"),
   });
 
   const goToHomeScreen = () => {
-    navigation.navigate("Home");
+    navigation.navigate("bottomTabNavigator");
   };
   if (!fontsLoaded) {
     return <AppLoading />;
@@ -37,7 +36,7 @@ const Splash = ({ navigation }) => {
               <View style={styles.btnContainer}>
                 <Button btnText="Explore" onPressFunction={goToHomeScreen} />
               </View>
-            </View> 
+            </View>
           </View>
         </ImageBackground>
       </SafeAreaView>
