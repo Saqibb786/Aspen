@@ -24,10 +24,10 @@ const bottomTabNavigator = () => (
       tabBarInactiveTintColor: "gray",
     })}
   >
-    <Tab.Screen name="Home" component={HomeScreen} />
-    <Tab.Screen name="Ticket" component={DummyScreen} />
-    <Tab.Screen name="Favourite Hotel" component={DummyScreen} />
-    <Tab.Screen name="Profile" component={DummyScreen} />
+    <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
+    <Tab.Screen name="Ticket" component={DummyScreen}options={{ headerShown: false }} />
+    <Tab.Screen name="Favourite Hotel" component={DummyScreen} options={{ headerShown: false }}/>
+    <Tab.Screen name="Profile" component={DummyScreen} options={{ headerShown: false }}/>
   </Tab.Navigator>
 );
 export default bottomTabNavigator;
