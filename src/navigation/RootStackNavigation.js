@@ -6,6 +6,7 @@ import Splash from "../screens/splash/Splash";
 import ParticularScreen from "../screens/particularScreen/ParticularScreen";
 import bottomTabNavigator from "../navigation/BottomTabNavigation";
 
+
 const Stack = createNativeStackNavigator();
 
 function RootStackNavigation() {
