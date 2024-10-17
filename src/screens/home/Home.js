@@ -14,8 +14,18 @@ import SearchBar from "../../components/SearchBar";
 import PopularItem from "../../components/PopularItem";
 import RecommendedItem from "../../components/RecommendedItem";
 import CatergoryList from "../../components/CatergoryList";
+import { useState } from "react";
 // Home Screen
 const HomeScreen = ({ navigation }) => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const filteredPopular = POPULAR.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const filteredRecommended = RECOMMENDED.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.main}>
@@ -45,13 +55,13 @@ const HomeScreen = ({ navigation }) => {
         <View>
           <Text style={{ fontSize: 40, fontWeight: "500" }}>Aspen</Text>
         </View>
-        <SearchBar />
+        <SearchBar setSearchQuery={setSearchQuery} />
         <CatergoryList />
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Popular</Text>
           <FlatList
             horizontal
-            data={POPULAR}
+            data={filteredPopular}
             renderItem={({ item }) => (
               <PopularItem item={item} navigation={navigation} />
             )}
@@ -72,7 +82,7 @@ const HomeScreen = ({ navigation }) => {
           </Text>
           <FlatList
             numColumns={2}
-            data={RECOMMENDED}
+            data={filteredRecommended}
             renderItem={({ item }) => <RecommendedItem item={item} />}
             keyExtractor={(item) => String(item?.id)}
             showsVerticalScrollIndicator={false}
@@ -112,7 +122,6 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   section: {
-    marginBottom: 8,
     flex: 1,
   },
   sectionTitle: {

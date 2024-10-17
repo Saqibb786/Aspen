@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-
+const SearchBar = ({ setSearchQuery }) => {
   return (
     <View style={styles.container}>
       <FontAwesome name="search" size={26} color="grey" style={styles.icon} />
       <TextInput
         style={styles.input}
         placeholder="Find things to do"
-        value={searchQuery}
+        // value={searchQuery}
         onChangeText={(text) => setSearchQuery(text)}
         placeholderTextColor="gray"
       />
