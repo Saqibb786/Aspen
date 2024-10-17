@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     width: 188,
+    height: 228,
     marginRight: 12,
   },
   popularImage: {
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0, 0, 0, 0.6)",
     borderBottomLeftRadius: 24,
     borderBottomRightRadius: 24,
+    padding: 10,
   },
   titleContainer: {
     // paddingHorizontal: 4,
