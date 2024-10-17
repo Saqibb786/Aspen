@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { FlatList } from "react-native-gesture-handler";
 import { CATEGORIES } from "../assets/data/Data";
@@ -8,20 +8,17 @@ const CategoryList = () => {
 
   return (
     <View style={styles.container}>
-      {/* <FlatList
-        horizontal
-        data={CATEGORIES}
-        renderItem={renderItemHorizontal}
-        keyExtractor={(item) => item}
-        // showsHorizontalScrollIndicator={false}
-      /> */}
       {CATEGORIES.map((item, index) => {
         return index === selected ? (
-          <Text style={[styles.text, styles.selectedText]}>{item}</Text>
+          <TouchableOpacity>
+            <Text style={[styles.text, styles.selectedText]}>{item}</Text>
+          </TouchableOpacity>
         ) : (
-          <Text style={styles.text} onPress={() => setSelected(index)}>
-            {item}
-          </Text>
+          <TouchableOpacity>
+            <Text style={styles.text} onPress={() => setSelected(index)}>
+              {item}
+            </Text>
+          </TouchableOpacity>
         );
       })}
     </View>

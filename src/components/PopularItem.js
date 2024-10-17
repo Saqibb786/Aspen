@@ -15,7 +15,7 @@ const PopularItem = ({ item, navigation }) => {
     >
       <View style={styles.cardContainer}>
         <Image source={item.image} style={styles.popularImage} />
-        <View style={styles.popularOverlay}>
+        <View style={styles.detailsContainer}>
           <View style={styles.titleContainer}>
             <Text style={styles.popularTitle}>{item.name}</Text>
           </View>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     width: 188,
-    height: 228,
+    height: 248,
     marginRight: 12,
   },
   popularImage: {
@@ -46,31 +46,43 @@ const styles = StyleSheet.create({
     height: "100%",
     borderRadius: 24,
   },
-  popularOverlay: {
+  detailsContainer: {
     position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    padding: 8,
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
-    padding: 10,
+    bottom: 12,
+    left: 10,
   },
   titleContainer: {
-    // paddingHorizontal: 4,
-    // paddingVertical: 2,
-    // justifyContent: "center",
-    // alignItems: "center",
+    // width: "100%",
   },
   popularTitle: {
-    color: "white",
-    fontSize: 14,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+
+    paddingHorizontal: 6,
+    paddingVertical: 6,
+
+    backgroundColor: "#444",
+    color: "#fff",
+    fontSize: 12,
+    borderRadius: 12,
   },
   ratingContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 4,
+    justifyContent: "center",
+    textAlign: "center",
+
+    marginTop: 5,
+    paddingHorizontal: 4,
+    paddingVertical: 4,
+
+    width: "60%",
+    backgroundColor: "#444",
+    color: "#fff",
+    fontSize: 11,
+    borderRadius: 12,
   },
   ratingText: {
     color: "white",

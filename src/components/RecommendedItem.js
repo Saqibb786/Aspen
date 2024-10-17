@@ -14,7 +14,7 @@ const RecommendedItem = ({ item, navigation }) => {
       <View style={styles.recommendedItem}>
         <Image source={item.image} style={styles.recommendedImage} />
         <Text style={styles.recommendedContent}>{item.content}</Text>
-        <View style={styles}>
+        <View>
           <Text style={styles.recommendedTitle}>{item.name}</Text>
         </View>
       </View>
