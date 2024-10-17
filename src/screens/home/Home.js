@@ -87,9 +87,9 @@ const HomeScreen = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 24,
-                fontWeight: "600",
+                fontWeight: "700",
                 marginBottom: 8,
-                marginTop: 50,
+                marginTop: 40,
               }}
             >
               Recommended
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: "600",
+    fontWeight: "700",
     marginBottom: 8,
   },
 });
