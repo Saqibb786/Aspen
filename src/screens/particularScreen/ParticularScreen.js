@@ -10,7 +10,8 @@ import {
 import { FontAwesome, MaterialIcons, Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const ParticularScreen = ({ navigation }) => {
+const ParticularScreen = ({ navigation, route }) => {
+  const { item } = route.params;
   const goToHomeScreen = () => {
     navigation.navigate("BottomTabNavigator");
   };
@@ -18,12 +19,9 @@ const ParticularScreen = ({ navigation }) => {
   return (
     <SafeAreaView>
       <ScrollView contentContainerStyle={styles.container}>
-        <View style={styles.card}>
+        <View style={styles.card} key={item.id}>
           <View style={styles.imageContainer}>
-            <Image
-              source={require("../../assets/location_images/location5.png")}
-              style={styles.image}
-            />
+            <Image source={item.image} style={styles.image} />
             <TouchableOpacity
               style={styles.backButton}
               onPress={goToHomeScreen}
@@ -36,7 +34,7 @@ const ParticularScreen = ({ navigation }) => {
           </View>
           <View style={styles.content}>
             <View style={styles.titleShowMap}>
-              <Text style={styles.title}>Coeurdes Alpes</Text>
+              <Text style={styles.title}>{item.name}</Text>
               <View style={styles.showMapContainer}>
                 <Text style={styles.link}>Show map</Text>
               </View>
@@ -48,7 +46,7 @@ const ParticularScreen = ({ navigation }) => {
                 size={16}
                 color="rgba(223, 150, 82, 1)"
               />
-              <Text style={styles.ratingText}>4.5 (355 Reviews)</Text>
+              <Text style={styles.ratingText}>{item.star} (355 Reviews)</Text>
             </View>
 
             <Text style={styles.description}>

@@ -6,7 +6,7 @@ import { TouchableOpacity } from "react-native";
 // Popular Component
 const PopularItem = ({ item, navigation }) => {
   const navigateToParticularScreen = () => {
-    navigation.navigate("ParticularScreen");
+    navigation.navigate("ParticularScreen", { item: item });
   };
   return (
     <TouchableOpacity
