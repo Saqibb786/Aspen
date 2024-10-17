@@ -10,7 +10,11 @@ import {
 import { FontAwesome, MaterialIcons, Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const ParticularScreen = () => {
+const ParticularScreen = ({ navigation }) => {
+  const goToHomeScreen = () => {
+    navigation.navigate("BottomTabNavigator");
+  };
+
   return (
     <SafeAreaView>
       <ScrollView contentContainerStyle={styles.container}>
@@ -20,7 +24,10 @@ const ParticularScreen = () => {
               source={require("../../assets/location_images/location5.png")}
               style={styles.image}
             />
-            <TouchableOpacity style={styles.backButton}>
+            <TouchableOpacity
+              style={styles.backButton}
+              onPress={goToHomeScreen}
+            >
               <FontAwesome name="arrow-left" size={20} color="gray" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.favoriteButton}>

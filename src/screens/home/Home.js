@@ -15,7 +15,7 @@ import PopularItem from "../../components/PopularItem";
 import RecommendedItem from "../../components/RecommendedItem";
 import CatergoryList from "../../components/CatergoryList";
 // Home Screen
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.main}>
@@ -52,7 +52,9 @@ const HomeScreen = () => {
           <FlatList
             horizontal
             data={POPULAR}
-            renderItem={({ item }) => <PopularItem item={item} />}
+            renderItem={({ item }) => (
+              <PopularItem item={item} navigation={navigation} />
+            )}
             keyExtractor={(item) => String(item?.id)}
             showsHorizontalScrollIndicator={false}
           />
