@@ -1,19 +1,33 @@
-import { StyleSheet, Text, View, Image } from "react-native";
-import React from "react";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 // Recommended Component
-const RecommendedItem = ({ item }) => (
-  <View style={styles.recommendedItem}>
-    <Image source={item.image} style={styles.recommendedImage} />
-    <Text style={styles.recommendedContent}>{item.content}</Text>
-    <View style={styles}>
-      <Text style={styles.recommendedTitle}>{item.name}</Text>
-    </View>
-  </View>
-);
+const RecommendedItem = ({ item, navigation }) => {
+  const navigateToParticularScreen = () => {
+    navigation.navigate("ParticularScreen", { item: item });
+  };
+
+  return (
+    <TouchableOpacity
+      onPress={navigateToParticularScreen}
+      style={styles.container}
+    >
+      <View style={styles.recommendedItem}>
+        <Image source={item.image} style={styles.recommendedImage} />
+        <Text style={styles.recommendedContent}>{item.content}</Text>
+        <View style={styles}>
+          <Text style={styles.recommendedTitle}>{item.name}</Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  );
+};
 export default RecommendedItem;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    height: "100%",
+  },
   recommendedItem: {
     flex: 1,
     margin: 4,

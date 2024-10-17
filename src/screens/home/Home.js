@@ -97,7 +97,9 @@ const HomeScreen = ({ navigation }) => {
             <FlatList
               numColumns={2}
               data={filteredRecommended}
-              renderItem={({ item }) => <RecommendedItem item={item} />}
+              renderItem={({ item }) => (
+                <RecommendedItem item={item} navigation={navigation} />
+              )}
               keyExtractor={(item) => String(item?.id)}
               showsVerticalScrollIndicator={false}
             />
