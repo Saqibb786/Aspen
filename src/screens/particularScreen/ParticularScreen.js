@@ -111,8 +111,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#f3f4f6",
     alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: 14,
-    paddingBottom: 18,
+    // paddingHorizontal: 14,
+    // paddingBottom: 18,
   },
   card: {
     backgroundColor: "#fff",
@@ -133,8 +133,8 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
+    // borderTopLeftRadius: 24,
+    // borderTopRightRadius: 24,
   },
   backButton: {
     position: "absolute",
@@ -242,7 +242,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginTop: 24,
+    marginTop: 40,
   },
   price: {
     fontSize: 24,
