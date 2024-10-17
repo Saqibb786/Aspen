@@ -51,3 +51,5 @@ export const RECOMMENDED = [
     image: require("../location_images/location4.png"),
   },
 ];
+
+export const CATEGORIES = ["Location", "Food", "Adventure", "Hotels"];

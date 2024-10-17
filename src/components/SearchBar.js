@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import React, { useState } from "react";
+import { View, TextInput, StyleSheet } from "react-native";
+import { FontAwesome } from "@expo/vector-icons";
 
 const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <View style={styles.container}>
@@ -21,14 +21,13 @@ const SearchBar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     borderRadius: 25,
     paddingHorizontal: 15,
     paddingVertical: 16,
-    marginTop:30,
-    marginBottom: 30,
-    backgroundColor: 'rgba(243, 248, 254, 1)',
+    marginTop: 24,
+    backgroundColor: "rgba(243, 248, 254, 1)",
   },
   icon: {
     marginRight: 10,
@@ -36,7 +35,7 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 18,
-    color: '#333',
+    color: "#333",
   },
 });
 

@@ -13,6 +13,7 @@ import { FontAwesome } from "@expo/vector-icons";
 import SearchBar from "../../components/SearchBar";
 import PopularItem from "../../components/PopularItem";
 import RecommendedItem from "../../components/RecommendedItem";
+import CatergoryList from "../../components/CatergoryList";
 // Home Screen
 const HomeScreen = () => {
   return (
@@ -45,6 +46,7 @@ const HomeScreen = () => {
           <Text style={{ fontSize: 40, fontWeight: "500" }}>Aspen</Text>
         </View>
         <SearchBar />
+        <CatergoryList />
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Popular</Text>
           <FlatList

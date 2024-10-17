@@ -9,7 +9,7 @@ import DummyScreen from "../screens/dummyScreen/DummyScreen";
 
 const Tab = createBottomTabNavigator();
 
-const bottomTabNavigator = () => (
+const BottomTabNavigator = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
       tabBarIcon: ({ color, size }) => {
@@ -25,10 +25,26 @@ const bottomTabNavigator = () => (
       tabBarInactiveTintColor: "gray",
     })}
   >
-    <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}/>
-    <Tab.Screen name="Ticket" component={DummyScreen}options={{ headerShown: false }} />
-    <Tab.Screen name="Favourite Hotel" component={DummyScreen} options={{ headerShown: false }}/>
-    <Tab.Screen name="Profile" component={DummyScreen} options={{ headerShown: false }}/>
+    <Tab.Screen
+      name="Home"
+      component={HomeScreen}
+      options={{ headerShown: false }}
+    />
+    <Tab.Screen
+      name="Ticket"
+      component={DummyScreen}
+      options={{ headerShown: false }}
+    />
+    <Tab.Screen
+      name="Favourite Hotel"
+      component={DummyScreen}
+      options={{ headerShown: false }}
+    />
+    <Tab.Screen
+      name="Profile"
+      component={DummyScreen}
+      options={{ headerShown: false }}
+    />
   </Tab.Navigator>
 );
-export default bottomTabNavigator;
+export default BottomTabNavigator;

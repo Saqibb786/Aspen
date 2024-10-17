@@ -12,7 +12,7 @@ const Splash = ({ navigation }) => {
   });
 
   const goToHomeScreen = () => {
-    navigation.navigate("bottomTabNavigator");
+    navigation.navigate("BottomTabNavigator");
   };
   if (!fontsLoaded) {
     return <AppLoading />;

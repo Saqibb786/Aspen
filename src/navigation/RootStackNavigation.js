@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // Screens
 import Splash from "../screens/splash/Splash";
 import ParticularScreen from "../screens/particularScreen/ParticularScreen";
-import bottomTabNavigator from "../navigation/BottomTabNavigation";
+import BottomTabNavigator from "../navigation/BottomTabNavigation";
 import HomeScreen from "../screens/home/Home";
 
 const Stack = createNativeStackNavigator();
@@ -21,8 +21,8 @@ function RootStackNavigation() {
           }}
         />
         <Stack.Screen
-          name="bottomTabNavigator"
-          component={bottomTabNavigator}
+          name="BottomTabNavigator"
+          component={BottomTabNavigator}
           options={{
             headerShown: false,
           }}
