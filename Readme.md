@@ -2,7 +2,7 @@
 
 Aspen is a React Native-based mobile application designed to help users explore popular and recommended destinations. The app features a modern and clean interface for discovering exciting places, with functionality to search by name and navigate through various categories.
 
-Developed collaboratively by [Saqib Ali Butt](https://github.com/Saqibb786) and [Abdullah Naveed](https://github.com/AbdullahNaveeed), Aspen brings the joy of travel exploration to your fingertips.
+Developed collaboratively by [Saqib Ali Butt](https://github.com/Saqibb786), [Abdullah Naveed](https://github.com/AbdullahNaveeed) and [Salman Ahmed](https://github.com/Sulman-Ahmad), Aspen brings the joy of travel exploration to your fingertips.
 
 ## Features ✨
 
@@ -67,6 +67,7 @@ We welcome contributions from everyone. If you'd like to contribute, please fork
 
 - [Saqib](https://github.com/Saqibb786) - Developer
 - [Abdullah Naveed](https://github.com/AbdullahNaveeed) - Developer
+- [Salman Ahmed](https://github.com/AbdullahNaveeed) - Developer
 
 ## License 📄
 
